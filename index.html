@@ -84,6 +84,19 @@
 
         <section id="contact">
             <h2>Get in touch</h2>
+            <form>
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First name" required />
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last name" required />
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="you@company.com" required />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea> 
+                <input type="checkbox" id="privacy" name="privacy" />
+                <label for="privacy">You agree to our friendly privacy policy.</label>
+                <button type="submit">Send message</button>
+            </form>
         </section>
     </main>
     <footer>
