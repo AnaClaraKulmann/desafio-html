@@ -1,0 +1,30 @@
+@layer reset, base;
+
+@layer reset {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow: auto;
+        font-size: 16px;
+    }
+}
+
+@layer base {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        line-height: 1.6;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
