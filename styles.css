@@ -200,4 +200,45 @@
             }
         }
     }
+
+    .shop {
+        padding: 90px 30px 0px 30px;
+
+        h2 {
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 100%;
+            color: rgba(16, 24, 40, 1);
+            
+        }
+        .img-pata3 {
+            width: 32px;
+            height: 32px;
+            color: rgba(16, 24, 40, 1);
+            margin-right: 16px;
+        }
+
+        h3 {
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 100%;
+            color: black;
+        }
+
+        .button-search {
+            width: 300px;
+            background-color: rgba(244, 244, 244, 1);
+            border-radius: 50px;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 100%;
+            color: rgba(16, 24, 40, 0.38);
+        }
+
+        .img-shop1, .img-shop2, .img-shop3, .img-shop4 {
+            display: flex;
+            width: 300px;
+        }
+       
+    }
 }
