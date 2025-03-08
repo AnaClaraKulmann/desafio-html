@@ -1,4 +1,4 @@
-@layer reset, base, navigation;
+@layer reset, base, navigation, components;
 
 @layer reset {
     * {
@@ -31,13 +31,11 @@
 
 @layer navigation {
     header {
-        color: #e7d7d7;
         font-size: 16px;
         line-height: 24px;
         font-weight: 600;
         padding: 1rem 0;
         height: 80px;
-        
 
         nav {
             display: flex;
@@ -46,6 +44,7 @@
             max-width: calc(100% - 2rem);
             margin: auto;
             padding: 0 1rem;
+            
 
             .img-pata {
                 margin-right: 32px;
@@ -56,6 +55,7 @@
                 font-size: 20px;
                 font-weight: 700;
                 margin: -20px;
+                color: rgb(216, 216, 231);
             }
 
             .menu {
@@ -77,7 +77,9 @@
                 text-align: right;
                 flex-direction: column;
                 justify-content: right;
-                margin-left: 50px;
+                margin-left: 30px;
+                background-color: rgb(255, 255, 255);
+                
                 
                 &.active {
                     display: flex;
@@ -102,6 +104,29 @@
                         margin-left: 1.2rem;
                     }
                 }
+
+                a {
+                    color: rgb(203, 221, 221);
+                    display: block;
+
+                    &:hover {
+                        @media (width <= 768px) {
+                            background: blue;
+                            color: aqua;
+                        }
+                    } 
+
+                    @media (width <= 768px) {
+                        border-bottom: 1px solid;
+                        border-color: rgb(226, 230, 230);
+                        transition: background 0.3s, color 0.3s;
+                        padding: 5px;
+                    }
+
+                    @media (width > 768px) {
+                        padding: 0;
+                    }
+                }
              }
 
              .button-start{
@@ -120,6 +145,59 @@
                 }
              }
         } 
- 
+    }
+}
+
+@layer components {
+    .hero {
+        background: url('img-hero.png') no-repeat center center/cover;
+        color: rgb(255, 255, 255);
+        padding: calc(5rem + 2vh) 1rem;
+        width: 100%;
+
+        h1 {
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 100%;
+            width: 630px;
+            height: 180px;
+            margin: 30px;
+
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            width: 630px;
+            height: 96px;
+            margin: 30px;
+            margin-bottom: 50px;
+        }
+
+        .cta-button {
+            width: 187px;
+            height: 64px;
+            color: rgb(255, 255, 255);
+            border: solid 1px;
+            border-radius: 50px;
+            margin-left: 30px;
+            padding: 16px 28px 16px 28px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 28px;
+
+            &:hover {
+                background-color: rgb(51, 66, 109);
+                opacity: 0.9;
+                transition: 0.2s;
+            }
+            
+
+            .img-pata2 {
+                margin-bottom: -10px;
+                margin-left: 10px;
+            }
+        }
     }
 }
