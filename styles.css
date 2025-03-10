@@ -235,9 +235,11 @@
             color: rgba(16, 24, 40, 0.38);
         }
 
-        .img-shop1, .img-shop2, .img-shop3, .img-shop4 {
+        .img-shop1, .img-shop2, .img-shop3{
             display: flex;
-            width: 300px;
+            width: 375px;
+            height: 447px;
+            border-radius: 10px;
         }
        
     }
