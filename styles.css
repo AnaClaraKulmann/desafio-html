@@ -36,14 +36,14 @@
         font-weight: 600;
         padding: 1rem 0;
         height: 80px;
+        position: absolute;
 
         nav {
             display: flex;
             align-items: center;
             width: 100%;
             max-width: calc(100% - 2rem);
-            margin: auto;
-            padding: 0 1rem;
+            padding: 0 2rem;
             
 
             .img-pata {
@@ -54,12 +54,15 @@
             .logo {
                 font-size: 20px;
                 font-weight: 700;
-                margin: -20px;
-                color: rgb(216, 216, 231);
+                margin-right: -40px;
+                margin-left: -20px;
+                width: 160px;
+                color: rgb(255, 255, 255);
             }
 
             .menu {
                 font-size: 16px;
+                text-align: right;
 
                 @media (width > 768px) {
                     display: none;
@@ -73,13 +76,13 @@
 
             .links-nav {
                 display: none;
+                width: 460px;
                 list-style: none;
                 text-align: right;
                 flex-direction: column;
                 justify-content: right;
-                margin-left: 30px;
-                background-color: rgb(255, 255, 255);
-                
+                margin-left: 50px;
+                justify-content: space-between;
                 
                 &.active {
                     display: flex;
@@ -106,21 +109,29 @@
                 }
 
                 a {
-                    color: rgb(203, 221, 221);
+                    color: rgba(255, 255, 255, 0.8);
                     display: block;
+                    
 
                     &:hover {
+                        color:  rgb(255, 255, 255);
+                        transition: 0.2s;
+                        font-size: 17px;
+                        
+                        
                         @media (width <= 768px) {
-                            background: blue;
-                            color: aqua;
+                            color: rgb(255, 255, 255);
+                            width: 100%;
                         }
                     } 
 
                     @media (width <= 768px) {
                         border-bottom: 1px solid;
-                        border-color: rgb(226, 230, 230);
+                        border-color: rgba(226, 230, 230, 0.705);
                         transition: background 0.3s, color 0.3s;
-                        padding: 5px;
+                        padding: 8px;
+                        border-radius: 12px;
+                        background-color: rgba(37, 37, 104, 0.493);
                     }
 
                     @media (width > 768px) {
@@ -131,14 +142,20 @@
 
              .button-start{
                 display: none;
-                color:rgba(16, 24, 40, 1);
+                color: rgba(16, 24, 40, 1);
                 text-align: center;
-                background-color: rgb(241, 226, 226);
+                background-color: rgba(255, 255, 255, 1);
                 border-radius: 50px;
                 width: 124px;
                 height: 44px;
                 padding: 11px; 
-                margin-left: 480px;       
+                margin-left: 430px;    
+                
+                &:hover {
+                    background-color: rgb(240, 241, 243);
+                    opacity: 1;
+                    transition: 0.2s;
+                }
                 
                 @media (width > 768px) {
                     display: inline;
@@ -148,12 +165,18 @@
     }
 }
 
+
 @layer components {
     .hero {
-        background: url('img-hero.png') no-repeat center center/cover;
+        background-image: url('img-hero.png');
+        background-size: cover; 
+        background-position: left;
+        background-repeat: no-repeat;
         color: rgb(255, 255, 255);
         padding: calc(5rem + 2vh) 1rem;
         width: 100%;
+        height: 100vh;
+        
 
         h1 {
             font-size: 60px;
@@ -203,12 +226,16 @@
 
     .shop {
         padding: 90px 30px 0px 30px;
+        width: 100%;
+        display: flex;
+        container-type: inline-size;
 
         h2 {
             font-size: 35px;
             font-weight: 500;
             line-height: 100%;
             color: rgba(16, 24, 40, 1);
+            margin-left: 40px;
             
         }
         .img-pata3 {
@@ -222,24 +249,47 @@
             font-size: 35px;
             font-weight: 600;
             line-height: 100%;
-            color: black;
+            color: rgb(0, 0, 0);
+            margin-top: 120px;
+            margin-left: -70px;
         }
 
         .button-search {
-            width: 300px;
             background-color: rgba(244, 244, 244, 1);
             border-radius: 50px;
             font-size: 17px;
             font-weight: 600;
             line-height: 100%;
             color: rgba(16, 24, 40, 0.38);
+            padding: 15px 13px;
+            width: 280px;
+            margin-left: 720px;
+            margin-top: -35px;
+            display: flex;
+            
+            .img-lupa {
+                width: 18px;
+                height: 18px;
+                margin-right: 13px;
+            }
         }
 
-        .img-shop1, .img-shop2, .img-shop3{
+        .categories {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 100%;
+            justify-content: center;
+            color: rgba(0, 0, 0, 0.7);
+            gap: 10px;
+            margin: 10px 20px;
+        }
+
+        .img-shop{
             display: flex;
             width: 375px;
             height: 447px;
             border-radius: 10px;
+            
         }
        
     }
