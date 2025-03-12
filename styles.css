@@ -459,7 +459,9 @@
         }
 
         .cat{
-            background-image: url(images/img-shop1.jpg);
+            background-image: 
+                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
+                url(images/img-shop1.jpg);
             background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
@@ -472,7 +474,9 @@
        }
 
         .cat-food {
-            background-image: url(images/img-shop2.jpg);
+            background-image: 
+                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
+                url(images/img-shop2.jpg);
             background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
@@ -485,7 +489,9 @@
          }
 
         .dog-food {
-            background-image: url(images/img-shop3.jpg);
+            background-image: 
+                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
+                url(images/img-shop3.jpg);
             background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
@@ -498,7 +504,9 @@
         }     
 
         .pet-plate{
-            background-image: url(images/img-shop4.png);
+            background-image: 
+                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
+                url(images/img-shop4.png);
             background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
@@ -511,7 +519,9 @@
         }
 
         .bird-water{
-            background-image: url(images/img-shop5.png);
+            background-image: 
+                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
+                url(images/img-shop5.png);
             background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
@@ -524,7 +534,9 @@
         }
 
         .dog-water {
-            background-image: url(images/img-shop6.png);
+            background-image: 
+                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
+                url(images/img-shop6.png);
             background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
@@ -534,6 +546,17 @@
             border-radius: 10px;
             color: white;
             text-align: center;
+        }
+
+        .button-view {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 100%;
+            color: rgba(16, 24, 40, 1);
+            display: flex;
+            justify-content: right;
+            margin: 30px 20px;
+            
         }
    }
 }
