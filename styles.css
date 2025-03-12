@@ -559,4 +559,29 @@
             
         }
    }
+
+   .services {
+    
+    .services-header{
+        margin-top: 100px;
+        
+        h2 {
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 100%;
+            width: 90%;
+            color: rgba(16, 24, 40, 1);
+            margin-left: 70px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid #ccc;
+       }
+
+       .img-pata4 {
+            width: 32px;
+            height: 32px;
+            color: rgba(16, 24, 40, 1);
+            margin-right: 16px;
+       }
+     }
+   }
 }
