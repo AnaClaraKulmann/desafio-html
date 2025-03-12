@@ -92,8 +92,6 @@
 
             .buttons {
               justify-content: space-between;
-              
-              
             
             .links-nav {
                 display: none;
@@ -290,28 +288,65 @@
         display: flex;
         container-type: inline-size;
 
-        h2 {
-            font-size: 35px;
-            font-weight: 500;
-            line-height: 100%;
-            color: rgba(16, 24, 40, 1);
-            margin-left: 40px;
-            
+        @media (width < 768px){
+            padding-top: 50px;
         }
-        .img-pata3 {
-            width: 32px;
-            height: 32px;
-            color: rgba(16, 24, 40, 1);
-            margin-right: 16px;
+        
+        .shop-header{
+            justify-content: space-between;
+
+            h2 {
+                font-size: 35px;
+                font-weight: 500;
+                line-height: 100%;
+                width: 670%;
+                color: rgba(16, 24, 40, 1);
+                margin-left: 40px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #ccc;
+
+                @media (width < 768px){
+                    font-size: 20px;
+                    width: 920%;
+                    margin-left: -10px;
+                    padding-bottom: 15px;
+                }
+            }
+
+            .img-pata3 {
+                width: 32px;
+                height: 32px;
+                color: rgba(16, 24, 40, 1);
+                margin-right: 16px;
+
+                @media (width < 768px){
+                    width: 24px;
+                    height: 24px;
+                }
+            }
         }
+    }
+        article {
+            border: 1px solid #ccc;
+            width: 1100px;
+            margin-top: 90px;
+            margin-left: -90px;
+
+            @media (width < 768px) {
+                border: none;
+            } 
+           
+
+        .title-shop{
+            justify-content: space-between;
 
         h3 {
             font-size: 35px;
             font-weight: 600;
             line-height: 100%;
             color: rgb(0, 0, 0);
-            margin-top: 120px;
-            margin-left: -70px;
+            margin-top: 45px;
+            margin-left: 30px;
         }
 
         .button-search {
@@ -323,8 +358,8 @@
             color: rgba(16, 24, 40, 0.38);
             padding: 15px 13px;
             width: 280px;
-            margin-left: 250px;
-            margin-top: -35px;
+            margin-left: 800px;
+            margin-top: -40px;
             display: flex;
             
             .img-lupa {
@@ -333,107 +368,281 @@
                 margin-right: 13px;
             }
         }
-
+    }
         .categories {
+            margin-top: 30px;
+            margin-left: 300px;
+
+           a {
             font-size: 20px;
             font-weight: 600;
             line-height: 100%;
-            justify-content: center;
             color: rgba(0, 0, 0, 0.7);
-            gap: 10px;
-            margin: 10px 20px;
+            margin: 20px;
+          }
         }
 
-        .cat {
+        .cat{
             background-image: url(images/img-shop1.jpg);
             background-size: cover; 
             background-position: center;
             background-repeat: no-repeat;
             display: block;
-            width: 275px;
-            height: 347px;
+            width: 250px;
+            height: 310px;
             border-radius: 10px;
             color: white;
             text-align: center;
-
-
+            
+            
         .product-value {
-            font-size: 25px;
+            display: block;
+            font-size: 18px;
             font-weight: 500;
             line-height: 100%;
             color: rgba(255, 255, 255, 1);
-            padding: 30px 20px;
+            padding: 23px 13px;
             text-align: left;
           }
 
           .heart-left {
-            display: flex;
-            width: 12px;
-            height: 21.5px;
+            display: block;
+            width: 15px;
+            height: 15px;
             border: 1.5px;
-            margin-left: 330px;
-            margin-top: -55px;
+            margin-left: 214px;
+            margin-top: -40px;
           }
 
           .heart-right {
-            display: flex; 
-            width: 12px;
-            height: 21.5px;
+            display: block; 
+            width: 15px;
+            height: 15px;
             border: 1.5px;
-            margin-left: 341px;
-            margin-top: -21px;
+            margin-left: 222px;
+            margin-top: -15px;
           }
 
           h1 {
-            font-size: 31px;
+            display: block;
+            font-size: 20px;
             font-weight: 700;
             line-height: 100%;
-            width: 370px;
-            margin-top: 115px;
+            width: 245px;
+            margin-top: 78px;
           }
 
           .descrition {
-            font-size: 17px;
+            display: block;
+            font-size: 11px;
             font-weight: 400;
             line-height: 100%;
-            width: 370px;
-            padding-top: 10px;
+            width: 250px;
+            padding-top: 7px;
           }
 
           .button-quantity {
-            width: 95px;
-            height: 50px;
+            width: 65px;
+            height: 35px;
             border-radius: 8px;
-            padding: 10px 29px;
-            font-size: 20px;
+            padding: 6px;
+            font-size: 14px;
             color: white;
             background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
-            display: flex;
-            margin-top: 110px;
-            margin-left: 50px;
+            display: block;
+            margin-top: 78px;
+            margin-left: 35px;
           }
 
           .button-add  {
-            padding: 10px 49px;
-            font-size: 20px;
+            width: 110px;
+            height: 35px;
+            padding: 7px;
+            font-size: 13px;
             font-weight: 400;
             color: white;
             background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
             border-radius: 8px;
-            box-shadow: 10px 4px 2px rgba(0, 0, 0, 0.25);
-            display: flex;
-            
-          }
+            box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+            display: block;
+            margin-top: -35px;
+            margin-left: 110px;
+       }
+   }
+
+        .cat-food {
+            background-image: url(images/img-shop2.jpg);
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            width: 250px;
+            height: 310px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+
+            .product-value {
+                display: block;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 100%;
+                color: rgba(255, 255, 255, 1);
+                padding: 23px 13px;
+                text-align: left;
+              }
+    
+              .heart-left {
+                display: block;
+                width: 15px;
+                height: 15px;
+                border: 1.5px;
+                margin-left: 214px;
+                margin-top: -40px;
+              }
+    
+              .heart-right {
+                display: block; 
+                width: 15px;
+                height: 15px;
+                border: 1.5px;
+                margin-left: 222px;
+                margin-top: -15px;
+              }
+    
+              h1 {
+                display: block;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 100%;
+                width: 245px;
+                margin-top: 78px;
+              }
+    
+              .descrition {
+                display: block;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 100%;
+                width: 250px;
+                padding-top: 7px;
+              }
+    
+              .button-quantity {
+                width: 65px;
+                height: 35px;
+                border-radius: 8px;
+                padding: 6px;
+                font-size: 14px;
+                color: white;
+                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
+                display: block;
+                margin-top: 78px;
+                margin-left: 35px;
+              }
+    
+              .button-add  {
+                width: 110px;
+                height: 35px;
+                padding: 7px;
+                font-size: 13px;
+                font-weight: 400;
+                color: white;
+                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
+                border-radius: 8px;
+                box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+                display: block;
+                margin-top: -35px;
+                margin-left: 110px;
+           }
 
         }
 
-        .img-shop {
-            width: 100px;
-        }
+        .dog-food {
+            background-image: url(images/img-shop3.jpg);
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            width: 250px;
+            height: 310px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
 
-
-
-        
-       
-    }
+            .product-value {
+                display: block;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 100%;
+                color: rgba(255, 255, 255, 1);
+                padding: 23px 13px;
+                text-align: left;
+              }
+    
+              .heart-left {
+                display: block;
+                width: 15px;
+                height: 15px;
+                border: 1.5px;
+                margin-left: 214px;
+                margin-top: -40px;
+              }
+    
+              .heart-right {
+                display: block; 
+                width: 15px;
+                height: 15px;
+                border: 1.5px;
+                margin-left: 222px;
+                margin-top: -15px;
+              }
+    
+              h1 {
+                display: block;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 100%;
+                width: 245px;
+                margin-top: 78px;
+              }
+    
+              .descrition {
+                display: block;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 100%;
+                width: 250px;
+                padding-top: 7px;
+              }
+    
+              .button-quantity {
+                width: 65px;
+                height: 35px;
+                border-radius: 8px;
+                padding: 6px;
+                font-size: 14px;
+                color: white;
+                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
+                display: block;
+                margin-top: 78px;
+                margin-left: 35px;
+              }
+    
+              .button-add  {
+                width: 110px;
+                height: 35px;
+                padding: 7px;
+                font-size: 13px;
+                font-weight: 400;
+                color: white;
+                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
+                border-radius: 8px;
+                box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+                display: block;
+                margin-top: -35px;
+                margin-left: 110px;
+           }
+        }     
+   }
 }
