@@ -85,7 +85,7 @@
                 }
 
                 .logo-menu {
-                    margin-left: 470px;
+                    margin-left: 150px;
                     margin-top: 20px;
                 }
             }
@@ -208,6 +208,16 @@
             width: 630px;
             height: 180px;
             margin: 30px;
+
+            @media (width < 768px) { 
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 130%;
+                width: 313px;
+                height: 117px;
+                margin-top: 100px;
+                margin-left: 15px;
+            }
         }
 
         p {
@@ -218,6 +228,17 @@
             height: 96px;
             margin: 30px;
             margin-bottom: 50px;
+
+            @media (width < 768px) { 
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
+                width: 345px;
+                height: 119px;
+                margin-top: -10px;
+                margin-left: 15px;
+                
+            }
         }
 
         .cta-button {
@@ -227,7 +248,7 @@
             border: solid 1px;
             border-radius: 50px;
             margin-left: 30px;
-            padding: 16px 28px 16px 28px;
+            padding: 22px 24px;
             font-size: 18px;
             font-weight: 600;
             line-height: 28px;
@@ -285,7 +306,7 @@
             color: rgba(16, 24, 40, 0.38);
             padding: 15px 13px;
             width: 280px;
-            margin-left: 500px;
+            margin-left: 250px;
             margin-top: -35px;
             display: flex;
             
@@ -312,8 +333,8 @@
             background-position: center;
             background-repeat: no-repeat;
             display: block;
-            width: 375px;
-            height: 447px;
+            width: 275px;
+            height: 347px;
             border-radius: 10px;
             color: white;
             text-align: center;
@@ -387,6 +408,10 @@
             
           }
 
+        }
+
+        .img-shop {
+            width: 100px;
         }
 
 
