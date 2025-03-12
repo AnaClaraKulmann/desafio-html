@@ -382,6 +382,82 @@
           }
         }
 
+        #cat, #cat-food, #dog-food, #pet-plate, #bird-water, #dog-water{
+            .product-value {
+                display: block;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 100%;
+                color: rgba(255, 255, 255, 1);
+                padding: 23px 13px;
+                text-align: left;
+              }
+
+              .heart-left {
+                display: block;
+                width: 15px;
+                height: 15px;
+                border: 1.5px;
+                margin-left: 214px;
+                margin-top: -40px;
+              }
+    
+              .heart-right {
+                display: block; 
+                width: 15px;
+                height: 15px;
+                border: 1.5px;
+                margin-left: 222px;
+                margin-top: -15px;
+              }
+    
+              h1 {
+                display: block;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 100%;
+                width: 245px;
+                margin-top: 78px;
+              }
+    
+              .descrition {
+                display: block;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 100%;
+                width: 250px;
+                padding-top: 7px;
+              }
+    
+              .button-quantity {
+                width: 65px;
+                height: 35px;
+                border-radius: 8px;
+                padding: 6px;
+                font-size: 14px;
+                color: white;
+                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
+                display: block;
+                margin-top: 78px;
+                margin-left: 35px;
+              }
+    
+              .button-add  {
+                width: 110px;
+                height: 35px;
+                padding: 7px;
+                font-size: 13px;
+                font-weight: 400;
+                color: white;
+                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
+                border-radius: 8px;
+                box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+                display: block;
+                margin-top: -35px;
+                margin-left: 110px;
+            }
+        }
+
         .cat{
             background-image: url(images/img-shop1.jpg);
             background-size: cover; 
@@ -393,82 +469,7 @@
             border-radius: 10px;
             color: white;
             text-align: center;
-            
-            
-        .product-value {
-            display: block;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 100%;
-            color: rgba(255, 255, 255, 1);
-            padding: 23px 13px;
-            text-align: left;
-          }
-
-          .heart-left {
-            display: block;
-            width: 15px;
-            height: 15px;
-            border: 1.5px;
-            margin-left: 214px;
-            margin-top: -40px;
-          }
-
-          .heart-right {
-            display: block; 
-            width: 15px;
-            height: 15px;
-            border: 1.5px;
-            margin-left: 222px;
-            margin-top: -15px;
-          }
-
-          h1 {
-            display: block;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 100%;
-            width: 245px;
-            margin-top: 78px;
-          }
-
-          .descrition {
-            display: block;
-            font-size: 11px;
-            font-weight: 400;
-            line-height: 100%;
-            width: 250px;
-            padding-top: 7px;
-          }
-
-          .button-quantity {
-            width: 65px;
-            height: 35px;
-            border-radius: 8px;
-            padding: 6px;
-            font-size: 14px;
-            color: white;
-            background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
-            display: block;
-            margin-top: 78px;
-            margin-left: 35px;
-          }
-
-          .button-add  {
-            width: 110px;
-            height: 35px;
-            padding: 7px;
-            font-size: 13px;
-            font-weight: 400;
-            color: white;
-            background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
-            border-radius: 8px;
-            box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
-            display: block;
-            margin-top: -35px;
-            margin-left: 110px;
        }
-   }
 
         .cat-food {
             background-image: url(images/img-shop2.jpg);
@@ -481,82 +482,7 @@
             border-radius: 10px;
             color: white;
             text-align: center;
-
-            .product-value {
-                display: block;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 100%;
-                color: rgba(255, 255, 255, 1);
-                padding: 23px 13px;
-                text-align: left;
-              }
-    
-              .heart-left {
-                display: block;
-                width: 15px;
-                height: 15px;
-                border: 1.5px;
-                margin-left: 214px;
-                margin-top: -40px;
-              }
-    
-              .heart-right {
-                display: block; 
-                width: 15px;
-                height: 15px;
-                border: 1.5px;
-                margin-left: 222px;
-                margin-top: -15px;
-              }
-    
-              h1 {
-                display: block;
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 100%;
-                width: 245px;
-                margin-top: 78px;
-              }
-    
-              .descrition {
-                display: block;
-                font-size: 11px;
-                font-weight: 400;
-                line-height: 100%;
-                width: 250px;
-                padding-top: 7px;
-              }
-    
-              .button-quantity {
-                width: 65px;
-                height: 35px;
-                border-radius: 8px;
-                padding: 6px;
-                font-size: 14px;
-                color: white;
-                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
-                display: block;
-                margin-top: 78px;
-                margin-left: 35px;
-              }
-    
-              .button-add  {
-                width: 110px;
-                height: 35px;
-                padding: 7px;
-                font-size: 13px;
-                font-weight: 400;
-                color: white;
-                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
-                border-radius: 8px;
-                box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
-                display: block;
-                margin-top: -35px;
-                margin-left: 110px;
-           }
-
-        }
+         }
 
         .dog-food {
             background-image: url(images/img-shop3.jpg);
@@ -569,80 +495,45 @@
             border-radius: 10px;
             color: white;
             text-align: center;
-
-            .product-value {
-                display: block;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 100%;
-                color: rgba(255, 255, 255, 1);
-                padding: 23px 13px;
-                text-align: left;
-              }
-    
-              .heart-left {
-                display: block;
-                width: 15px;
-                height: 15px;
-                border: 1.5px;
-                margin-left: 214px;
-                margin-top: -40px;
-              }
-    
-              .heart-right {
-                display: block; 
-                width: 15px;
-                height: 15px;
-                border: 1.5px;
-                margin-left: 222px;
-                margin-top: -15px;
-              }
-    
-              h1 {
-                display: block;
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 100%;
-                width: 245px;
-                margin-top: 78px;
-              }
-    
-              .descrition {
-                display: block;
-                font-size: 11px;
-                font-weight: 400;
-                line-height: 100%;
-                width: 250px;
-                padding-top: 7px;
-              }
-    
-              .button-quantity {
-                width: 65px;
-                height: 35px;
-                border-radius: 8px;
-                padding: 6px;
-                font-size: 14px;
-                color: white;
-                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
-                display: block;
-                margin-top: 78px;
-                margin-left: 35px;
-              }
-    
-              .button-add  {
-                width: 110px;
-                height: 35px;
-                padding: 7px;
-                font-size: 13px;
-                font-weight: 400;
-                color: white;
-                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
-                border-radius: 8px;
-                box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
-                display: block;
-                margin-top: -35px;
-                margin-left: 110px;
-           }
         }     
+
+        .pet-plate{
+            background-image: url(images/img-shop4.png);
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            width: 250px;
+            height: 310px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .bird-water{
+            background-image: url(images/img-shop5.png);
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            width: 250px;
+            height: 310px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .dog-water {
+            background-image: url(images/img-shop6.png);
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            width: 250px;
+            height: 310px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
    }
 }
