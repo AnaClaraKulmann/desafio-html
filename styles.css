@@ -620,7 +620,24 @@
         font-weight: 400;
         line-height: 100%;
         color: rgba(16, 24, 40, 1);
-        margin: 50px 40px;
+        margin: 50px 30px;
+    }
+
+    .img-about1{
+        width: 400px;
+        height: 500px;
+        display: flex;
+        margin-left: 665px;
+        margin-top: -645px;
+    }
+
+    .img-about2{
+        width: 210px;
+        height: 210px;
+        display: flex;
+        margin-left: 573px;
+        margin-top: -124px;
+        margin-bottom: 60px;
     }
    }
   }
