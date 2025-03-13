@@ -286,7 +286,6 @@
         padding: 90px 30px 0px 30px;
         width: 100%;
         display: flex;
-        container-type: inline-size;
 
         @media (width < 768px){
             padding-top: 50px;
@@ -584,4 +583,45 @@
        }
      }
    }
+
+   .about {
+
+    .about-header{
+       h2 { 
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 100%;
+        width: 90%;
+        color: rgba(16, 24, 40, 1);
+        margin-left: 70px;
+        margin-top: 90px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #ccc;
+       }
+
+    .img-pata5 {
+        width: 32px;
+        height: 32px;
+        color: rgba(16, 24, 40, 1);
+        margin-right: 16px;
+     }
+   }
+
+   .about-body {
+    border: 1px solid #ccc;
+    width: 1100px;
+    margin-top: 33px;
+    margin-left: 120px;
+
+    p {
+        width: 540px;
+        height: 80px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 100%;
+        color: rgba(16, 24, 40, 1);
+        margin: 50px 40px;
+    }
+   }
+  }
 }
