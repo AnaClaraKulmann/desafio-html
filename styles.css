@@ -402,179 +402,164 @@
             width: 850px;
             justify-content: space-between;
             
-        
-        #cat, #cat-food, #dog-food, #pet-plate, #bird-water, #dog-water{
-            margin-right: 30px;
-            
-            
-            .product-value {
-                display: block;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 100%;
-                color: rgba(255, 255, 255, 1);
-                padding: 23px 13px;
-                text-align: left;
-                }
+        .cat.product-card{
+            background-image: url(images/img-shop1.jpg);
 
-              .heart-left {
-                display: block;
-                width: 15px;
-                height: 15px;
-                border: 1.5px;
-                margin-left: 214px;
-                margin-top: -40px;
+            &:hover{
+                background-image: 
+                  linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent),
+                  url(images/img-shop1.jpg);
               }
-    
-              .heart-right {
-                display: block; 
-                width: 15px;
-                height: 15px;
-                border: 1.5px;
-                margin-left: 222px;
-                margin-top: -15px;
-              }
-    
-              h1 {
-                display: block;
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 100%;
-                width: 245px;
-                margin-top: 78px;
-              }
-    
-              .descrition {
-                display: block;
-                font-size: 11px;
-                font-weight: 400;
-                line-height: 100%;
-                width: 250px;
-                padding-top: 7px;
-              }
-    
-              .button-quantity {
-                width: 65px;
-                height: 35px;
-                border-radius: 8px;
-                padding: 6px;
-                font-size: 14px;
-                color: white;
-                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
-                display: block;
-                margin-top: 78px;
-                margin-left: 35px;
-              }
-    
-              .button-add  {
-                width: 110px;
-                height: 35px;
-                padding: 7px;
-                font-size: 13px;
-                font-weight: 400;
-                color: white;
-                background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
-                border-radius: 8px;
-                box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
-                display: block;
-                margin-top: -35px;
-                margin-left: 110px;
-            }
-          }
-        }
-
-        .cat{
-            background-image: 
-                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
-                url(images/img-shop1.jpg);
-            background-size: cover; 
-            background-position: center;
-            background-repeat: no-repeat;
-            display: block;
-            width: 250px;
-            height: 310px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
        }
 
-        .cat-food {
-            background-image: 
-                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
-                url(images/img-shop2.jpg);
-            background-size: cover; 
-            background-position: center;
-            background-repeat: no-repeat;
-            display: block;
-            width: 250px;
-            height: 310px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
-         }
+        .cat-food.product-card{
+            background-image: url(images/img-shop2.jpg);
 
-        .dog-food {
-            background-image: 
-                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
-                url(images/img-shop3.jpg);
-            background-size: cover; 
-            background-position: center;
-            background-repeat: no-repeat;
-            display: block;
-            width: 250px;
-            height: 310px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
+            &:hover{
+                background-image: 
+                  linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent),
+                  url(images/img-shop2.jpg);
+              }
+        }
+
+        .dog-food.product-card{
+            background-image: url(images/img-shop3.jpg);
+
+            &:hover{
+                background-image: 
+                  linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent),
+                  url(images/img-shop3.jpg);
+              }
         }     
 
-        .pet-plate{
-            background-image: 
-                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
-                url(images/img-shop4.png);
-            background-size: cover; 
-            background-position: center;
-            background-repeat: no-repeat;
-            display: block;
-            width: 250px;
-            height: 310px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
+        .pet-plate.product-card{
+            background-image: url(images/img-shop4.png);
+
+            &:hover{
+                background-image: 
+                  linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent),
+                  url(images/img-shop4.png);
+              }
         }
 
-        .bird-water{
-            background-image: 
-                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
-                url(images/img-shop5.png);
-            background-size: cover; 
-            background-position: center;
-            background-repeat: no-repeat;
-            display: block;
-            width: 250px;
-            height: 310px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
+        .bird-water.product-card{
+            background-image: url(images/img-shop5.png);
+
+            &:hover{
+                background-image: 
+                  linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent),
+                  url(images/img-shop5.png);
+              }
         }
 
-        .dog-water {
-            background-image: 
-                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent 0%),
+        .dog-water.product-card{
+            background-image: url(images/img-shop6.png);
+
+            &:hover{
+              background-image: 
+                linear-gradient(rgba(16, 24, 40, 0.54) 100%, transparent),
                 url(images/img-shop6.png);
-            background-size: cover; 
-            background-position: center;
-            background-repeat: no-repeat;
-            display: block;
-            width: 250px;
-            height: 310px;
-            border-radius: 10px;
-            color: white;
-            text-align: center;
+            }
         }
-      
 
-      .button-view {
+      .product-card{
+        background-size: cover; 
+        background-position: center;
+        display: block;
+        width: 250px;
+        height: 310px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        margin-right: 30px;
+
+
+        .product-value, .heart-left, .heart-right, h1, .descrition, .button-quantity, .button-add{
+            opacity: 0;
+        }
+
+        &:hover .product-value,&:hover .heart-left,&:hover .heart-right,&:hover h1,&:hover .descrition,&:hover .button-quantity,&:hover .button-add{
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+   
+
+        .product-value {
+            display: block;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 100%;
+            color: rgba(255, 255, 255, 1);
+            padding: 23px 13px;
+            text-align: left;
+            }
+
+          .heart-left {
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1.5px;
+            margin-left: 214px;
+            margin-top: -40px;
+          }
+
+          .heart-right {
+            display: block; 
+            width: 15px;
+            height: 15px;
+            border: 1.5px;
+            margin-left: 222px;
+            margin-top: -15px;
+          }
+
+          h1 {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 100%;
+            width: 245px;
+            margin-top: 78px;
+          }
+
+          .descrition {
+            display: block;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 100%;
+            width: 250px;
+            padding-top: 7px;
+          }
+
+          .button-quantity {
+            width: 65px;
+            height: 35px;
+            border-radius: 8px;
+            padding: 6px;
+            font-size: 14px;
+            color: white;
+            background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
+            display: block;
+            margin-top: 78px;
+            margin-left: 35px;
+          }
+
+          .button-add  {
+            width: 110px;
+            height: 35px;
+            padding: 7px;
+            font-size: 13px;
+            font-weight: 400;
+            color: white;
+            background-image: linear-gradient(rgb(16, 24, 40), rgba(35, 50, 80, 1));
+            border-radius: 8px;
+            box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+            display: block;
+            margin-top: -35px;
+            margin-left: 110px;
+        }
+      }
+    }
+      .button-view{
         font-size: 18px;
         font-weight: 600;
         line-height: 100%;
@@ -583,9 +568,9 @@
         justify-content: right;
         margin: 30px 20px;
     }
-   }
+}
 
-   .services {
+   .services{
     
     .services-header{
         margin-top: 100px;
@@ -725,7 +710,7 @@
         }
    
 
-   .about {
+   .about{
 
     .about-header{
        h2 { 
