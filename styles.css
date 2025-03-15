@@ -947,6 +947,12 @@
             margin-right: 16px;
         }
     }
-    
+    .contact-body{
+        .contact-info{
+            .info{
+
+            }
+        }
+    }
   }
 }
