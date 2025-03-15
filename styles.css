@@ -949,15 +949,37 @@
     }
     .contact-body{
         .contact-info{
-            .info{
-                h3{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 260px 260px;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 60px;
+            margin-top: 200px;
+            margin-left: -50px;
+            justify-content: right;
 
+
+            .info{
+                .icons-contact{
+                    padding-bottom: 10px;
+                }
+                h3{
+                    font-size: 19px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    padding-bottom: 10px;
                 }
                 .p-descrition{
-
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: rgba(206, 206, 206, 1);
+                    padding-bottom: 18px;
                 }
                 .p-info{
-                    
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 24px;
                 }
             }
         }
