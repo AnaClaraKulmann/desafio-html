@@ -1113,7 +1113,29 @@
       }
 
       .aside-newsletter{
-        
+        border-top: 0.5px solid rgba(206, 206, 206, 1);
+        padding: 50px 100px;
+
+        h2{
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 30px;
+        } 
+        p{
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 30px;
+            color: rgba(206, 206, 206, 1);
+        }
+
+        .form-subscribe{
+            input{
+
+            }
+            button{
+
+            }
+        }
       }
     }
 }
