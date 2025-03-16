@@ -985,7 +985,7 @@
                 }
             }
         }
-        form{
+        .form-message{
             display: flex;
             flex-direction: column;
             width: 540px;
@@ -1109,7 +1109,11 @@
                     font-size: 17px;
                 }
             }
-        }  
+         }  
+      }
+
+      .aside-newsletter{
+        
       }
     }
 }

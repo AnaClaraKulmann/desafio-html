@@ -308,7 +308,7 @@
                 <p class="p-info">+234 901234 384</p>
               </div>
             </div>
-            <form>
+            <form class="form-message">
                <p class="first name"> 
                 <label for="firstName">First name</label>
                 <input type="text" id="firstName" name="firstName" placeholder="First name" required />
@@ -332,18 +332,24 @@
                 <button type="submit">Send message</button>
             </form>
           </article>
+
+          <aside class="aside-newsletter">
+            <h2>Join our newsletter</h2>
+            <p>Be the first to receive latest updates on promo, sales and offers</p>
+            <form class="form-subscribe">
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </aside>
         </section>
      </main>
 
     <footer>
-      <h2>Join our newsletter</h2>
-      <p>Be the first to receive latest updates on promo, sales and offers</p>
-      <form>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required />
-        <button type="submit">Subscribe</button>
-      </form>
-      <h2>Paws n’ Play</h2>
-      <p>Where wagging tails and purring hearts reign supreme!</p>
+     
+     <div>
+        <h2>Paws n’ Play</h2>
+        <p>Where wagging tails and purring hearts reign supreme!</p>
+     </div>
 
       <h3>Shop</h3>
       <ul>
@@ -391,6 +397,7 @@
       </ul>
       <p>&copy; 2024 Paws n’ Play. All rights reserved.</p>
     </footer>
+
     <script>
       document
       .getElementById('menu')
