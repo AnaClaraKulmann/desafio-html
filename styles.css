@@ -948,14 +948,16 @@
         }
     }
     .contact-body{
+        padding-bottom: 65px;
+        
         .contact-info{
             width: 100%;
             display: grid;
-            grid-template-columns: 260px 260px;
+            grid-template-columns: 235px 235px;
             grid-template-rows: repeat(2, 1fr);
-            gap: 60px;
-            margin-top: 200px;
-            margin-left: -50px;
+            gap: 50px;
+            margin-top: 170px;
+            margin-left: -120px;
             justify-content: right;
 
 
@@ -964,25 +966,150 @@
                     padding-bottom: 10px;
                 }
                 h3{
-                    font-size: 19px;
+                    font-size: 18px;
                     font-weight: 600;
                     line-height: 30px;
-                    padding-bottom: 10px;
+                    padding-bottom: 7px;
                 }
                 .p-descrition{
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: 400;
                     line-height: 24px;
                     color: rgba(206, 206, 206, 1);
-                    padding-bottom: 18px;
+                    padding-bottom: 16px;
                 }
                 .p-info{
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: 600;
                     line-height: 24px;
                 }
             }
         }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 540px;
+            height: 540px;
+            background-color: white;
+            color: rgba(52, 64, 84, 1);
+            border-radius: 16px;
+            margin-top: -440px;
+            margin-left: 100px;
+            padding: 40px;
+            padding-top: 33px;
+
+            .name{
+                display: flex;
+                flex-direction: column;
+                width: 47%;
+                margin-bottom: 30px;
+             
+                label{
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    padding-bottom: 7px;
+                }
+                input{
+                    padding: 10px 14px;
+                    border: 1px solid rgba(208, 213, 221, 1);
+                    border-radius: 8px;
+                    box-shadow: 0.5px 1px 3px rgba(16, 24, 40, 0.05);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+             }
+             .last{
+                margin-left: 243px;
+                margin-top: -103px;
+                margin-bottom: 20px;
+            }
+
+            .email{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 25px;
+
+                label{
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    padding-bottom: 7px;
+                }
+                input{
+                    padding: 10px 14px;
+                    border: 1px solid rgba(208, 213, 221, 1);
+                    border-radius: 8px;
+                    box-shadow: 0.5px 1px 3px rgba(16, 24, 40, 0.05);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    }
+                }
+
+            .message{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 25px;
+
+                label{
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    padding-bottom: 7px;
+                }
+                textarea{
+                    padding: 10px 14px;
+                    border: 1px solid rgba(208, 213, 221, 1);
+                    border-radius: 8px;
+                    box-shadow: 0.5px 1px 3px rgba(16, 24, 40, 0.05);
+                    font-size: 16px;
+                    }
+                }   
+            .privacy{
+                label{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    padding: 8px;
+                    
+                    .underline{
+                        text-decoration: underline;
+                    }
+                }
+                input{
+                    border: 1px solid rgba(208, 213, 221, 1);
+                    border-radius: 6px;
+                    width: 20px;
+                    height: 20px;
+                    margin-bottom: -4px;
+                    appearance: none;
+                    cursor: pointer;
+                    
+                }
+                input:checked{
+                    background-color: rgba(7, 28, 61, 0.63);
+                }
+            }   
+            
+            button{
+                margin-top: 22px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: white;
+                padding: 18px 25px;
+                background-image: linear-gradient(to right, rgb(16, 24, 40), rgba(35, 50, 80, 1));
+                border: 0px;
+                border-radius: 8px;
+
+                &:hover{
+                    background-image: linear-gradient(to right, rgba(16, 24, 40, 0.918), rgba(35, 50, 80, 0.884));
+                    font-size: 17px;
+                }
+            }
+        }  
+      }
     }
-  }
 }
