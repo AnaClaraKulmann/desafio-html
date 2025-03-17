@@ -1,4 +1,4 @@
-@layer reset, base, navigation, components;
+@layer reset, base, navigation, components, footer;
 
 @layer reset {
     * {
@@ -184,7 +184,6 @@
         } 
     }
 }
-
 
 @layer components {
     .hero {
@@ -1161,4 +1160,44 @@
         }
       }
     }
+ }
+
+ @layer footer{
+    footer{
+        background-color: rgba(16, 24, 40, 1);
+        color: white;
+    
+    .footer-header{
+        margin-top: 60px;
+        margin-left: 100px;
+
+        h2{
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+        .img-pata9{
+            width: 28px;
+            height: 28px;
+            color: rgb(255, 255, 255);
+            margin-right: 15px;
+            margin-bottom: -9px;
+        }
+        p{
+            width: 320px;
+            height: 48px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgba(206, 206, 206, 1);
+        }
+    }
+
+    .footer-body{
+        
+    }
+
+
+   }   
  }
