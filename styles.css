@@ -1221,6 +1221,26 @@
       }
     }
 
+    .footer-social{
+        border-top: 0.5px solid rgba(206, 206, 206, 0.5);
+        margin: 0px 100px;
+        margin-bottom: 30px;
 
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgba(206, 206, 206, 1);
+            margin-top: 30px;
+            
+        }
+        .icons-footer{
+            margin-left: 860px;
+            margin-top: -25px;
+            a{
+                padding-left: 20px;
+            }
+        }
+     }
    }   
  }
