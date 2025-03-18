@@ -223,7 +223,7 @@
                   <p>Senior Veterinarian</p>
                   <a href="https://x.com/"><img src="images/icon-team1.png" alt="Icon Our Team 1" class="icons-team"/></a>
                   <a href="https://www.linkedin.com/"><img src="images/icon-team2.png" alt="Icon Our Team 2" class="icons-team"/></a>
-                  <a href="#"><img src="images/icon-team3.png" alt="Icon Our Team 3" class="icons-team"/></a>
+                  <a href="https://dribbble.com/"><img src="images/icon-team3.png" alt="Icon Our Team 3" class="icons-team"/></a>
                 </div>
 
                 <div class="team-card">
@@ -232,7 +232,7 @@
                   <p>Asst. Veterinarian</p>
                   <a href="https://x.com/"><img src="images/icon-team1.png" alt="Icon Our Team 1" class="icons-team"/></a>
                   <a href="https://www.linkedin.com/"><img src="images/icon-team2.png" alt="Icon Our Team 2" class="icons-team"/></a>
-                  <a href="#"><img src="images/icon-team3.png" alt="Icon Our Team 3" class="icons-team"/></a>
+                  <a href="https://dribbble.com/"><img src="images/icon-team3.png" alt="Icon Our Team 3" class="icons-team"/></a>
                 </div>
 
                 <div class="team-card">
@@ -241,7 +241,7 @@
                   <p>Resident Veterinarian</p>
                   <a href="https://x.com/"><img src="images/icon-team1.png" alt="Icon Our Team 1" class="icons-team"/></a>
                   <a href="https://www.linkedin.com/"><img src="images/icon-team2.png" alt="Icon Our Team 2" class="icons-team"/></a>
-                  <a href="#"><img src="images/icon-team3.png" alt="Icon Our Team 3" class="icons-team"/></a>
+                  <a href="https://dribbble.com/"><img src="images/icon-team3.png" alt="Icon Our Team 3" class="icons-team"/></a>
                </div>
 
                 <div class="team-card">
@@ -250,7 +250,7 @@
                   <p>Intern Veterinarian</p>
                   <a href="https://x.com/"><img src="images/icon-team1.png" alt="Icon Our Team 1" class="icons-team"/></a>
                   <a href="https://www.linkedin.com/"><img src="images/icon-team2.png" alt="Icon Our Team 2" class="icons-team"/></a>
-                  <a href="#"><img src="images/icon-team3.png" alt="Icon Our Team 3" class="icons-team"/></a>
+                  <a href="https://dribbble.com/"><img src="images/icon-team3.png" alt="Icon Our Team 3" class="icons-team"/></a>
               </div>
            </div>
         </section>
@@ -337,11 +337,14 @@
           <aside class="aside-newsletter">
             <h2>Join our newsletter</h2>
             <p>Be the first to receive latest updates on promo, sales and offers</p>
-            <form id="formSubscribe" class="form-subscribe">
-              <input type="email" id="emailInput" name="email" placeholder="Enter your email" required novalidate />
-              <button type="submit">Subscribe</button>
+            <form id="formSubscribe" class="form-subscribe" novalidate>
+              <input type="email" id="emailInput" name="email" placeholder="Enter your email" />
+              <button type="button" onclick="validarEmail(document.getElementById('emailInput').value);">Subscribe</button>
+              <div id="customAlert">
+                <p id="alertMessage"></p>
+                <button type="button" onclick="fecharAlerta()">OK</button>
+            </div>
             </form>
-            <p id="resultMessage"></p>
           </aside>
         </section>
      </main>
@@ -416,8 +419,8 @@
         <a href="https://www.linkedin.com/"><img src="images/icon-footer2.png" alt="Icon Footer 2" /></a>
         <a href="https://www.facebook.com/"><img src="images/icon-footer3.png" alt="Icon Footer 3" /></a>
         <a href="https://github.com/"><img src="images/icon-footer4.png" alt="Icon Footer 4" /></a>
-        <a href="#"><img src="images/icon-footer5.png" alt="Icon Footer 5" /></a>
-        <a href="#"><img src="images/icon-footer6.png" alt="Icon Footer 6" /></a>
+        <a href="https://www.angellist.com/"><img src="images/icon-footer5.png" alt="Icon Footer 5" /></a>
+        <a href="https://dribbble.com/"><img src="images/icon-footer6.png" alt="Icon Footer 6" /></a>
        </div>
       </div>
     </footer>
