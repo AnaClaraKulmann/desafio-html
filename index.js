@@ -23,5 +23,7 @@ function exibirAlerta(titulo, mensagem) {
 function fecharAlerta() {
     const customAlert = document.getElementById("customAlert");
     customAlert.style.display = "none";
+
+    document.getElementById("emailInput").value = "";
 }
 
