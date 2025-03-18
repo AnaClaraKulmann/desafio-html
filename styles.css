@@ -154,6 +154,21 @@
                         padding: 0;
                     }
                 }
+
+                .dropmenu-shop{
+                    position: absolute;
+                    display: none;
+                    background-color: rgba(13, 13, 37, 0.979);
+                    border-radius: 8px;
+                    padding: 10px;
+
+                    a{
+                        padding-bottom: 5px;
+                    }
+                }
+                .dropdown-shop:hover .dropmenu-shop{
+                    display: block;
+                }
              }
 
              .button-start{
