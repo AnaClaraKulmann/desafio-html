@@ -424,8 +424,6 @@
 
         .products{
             display: flex;
-            flex-wrap: nowrap;
-            overflow: scroll;
             margin: 30px;
             margin-left: 120px;
             width: 850px;
@@ -494,7 +492,6 @@
       .product-card{
         background-size: cover; 
         background-position: center;
-        display: block;
         width: 250px;
         height: 310px;
         border-radius: 10px;
@@ -596,6 +593,13 @@
         display: flex;
         justify-content: right;
         margin: 30px 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover{
+            color: rgba(25, 38, 63, 0.726);
+        }
     }
       }
     }

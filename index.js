@@ -27,3 +27,25 @@ function fecharAlerta() {
     document.getElementById("emailInput").value = "";
 }
 
+
+
+function viewMore() {
+    const hideDivs = ['cat', 'cat-food', 'dog-food'];
+
+    const showDivs = ['pet-plate', 'bird-water', 'dog-water'];
+
+    hideDivs.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.style.display = 'none'; 
+        }
+    });
+
+   
+    showDivs.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.style.display = 'block'; 
+        }
+    });
+}
