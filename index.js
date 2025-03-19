@@ -28,12 +28,12 @@ function fecharAlerta() {
 }
 
 
-
+// Botões "View More" e "View Previous" da Section "Shop"
 function viewMore() {
     const hideDivs = ['cat', 'cat-food', 'dog-food'];
-
     const showDivs = ['pet-plate', 'bird-water', 'dog-water'];
 
+    // Oculta as divs originais
     hideDivs.forEach(id => {
         const element = document.getElementById(id);
         if (element) {
@@ -41,11 +41,38 @@ function viewMore() {
         }
     });
 
-   
+   // Mostra as outras divs
     showDivs.forEach(id => {
         const element = document.getElementById(id);
         if (element) {
             element.style.display = 'block'; 
         }
     });
+
+     // Troca os botões
+     document.querySelector('.button-view').style.display = 'none'; // Esconde "View More"
+     document.querySelector('.button-view-previous').style.display = 'block'; // Mostra "View Previous"
+ }
+
+
+ function viewPrevious() {
+    const showDivs = ['cat', 'cat-food', 'dog-food'];
+    const hideDivs = ['pet-plate', 'bird-water', 'dog-water'];
+
+    showDivs.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.style.display = 'block';
+        }
+    });
+
+    hideDivs.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.style.display = 'none';
+        }
+    });
+
+    document.querySelector('.button-view').style.display = 'block'; 
+    document.querySelector('.button-view-previous').style.display = 'none';
 }
