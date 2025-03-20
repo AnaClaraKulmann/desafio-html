@@ -1140,6 +1140,7 @@
                 background-image: linear-gradient(to right, rgb(16, 24, 40), rgba(35, 50, 80, 1));
                 border: 0px;
                 border-radius: 8px;
+                cursor: pointer;
 
                 &:hover{
                     background-image: linear-gradient(to right, rgba(16, 24, 40, 0.918), rgba(35, 50, 80, 0.884));
